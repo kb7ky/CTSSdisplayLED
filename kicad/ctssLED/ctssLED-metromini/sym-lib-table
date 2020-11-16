@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name CTSS-components)(type Legacy)(uri ${KIPRJMOD}/CTSS-components.lib)(options "")(descr ""))
+  (lib (name ctssLED-metromini-eagle-import)(type Legacy)(uri ${KIPRJMOD}/ctssLED-metromini-eagle-import.lib)(options "")(descr ""))
+)

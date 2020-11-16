@@ -1,0 +1,389 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title "CTSS LED Backpack w/ MetroMini"
+Date "2020-11-15"
+Rev "v 0.1"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 "Author: dtk"
+$EndDescr
+$Comp
+L CTSS-components:CommSpec-SS32P U?
+U 1 1 5FB19E24
+P 2950 4900
+F 0 "U?" H 2950 5325 50  0000 C CNN
+F 1 "CommSpec-SS32P" H 2950 5234 50  0000 C CNN
+F 2 "" H 2950 4900 50  0001 C CNN
+F 3 "" H 2950 4900 50  0001 C CNN
+	1    2950 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CTSS-components:Adafruit-LED-Backpack U?
+U 1 1 5FB1B541
+P 6400 2600
+F 0 "U?" H 6383 2925 50  0000 C CNN
+F 1 "Adafruit-LED-Backpack" H 6383 2834 50  0000 C CNN
+F 2 "" H 6400 2600 50  0001 C CNN
+F 3 "" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L CTSS-components:TR-7600 U?
+U 1 1 5FB3735D
+P 2800 3650
+F 0 "U?" H 3128 3671 50  0000 L CNN
+F 1 "TR-7600" H 3128 3580 50  0000 L CNN
+F 2 "" H 2800 3650 50  0001 C CNN
+F 3 "" H 2800 3650 50  0001 C CNN
+	1    2800 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L CTSS-components:Adafruit-MetroMini U?
+U 1 1 5FB37963
+P 6650 4450
+F 0 "U?" H 7378 4496 50  0000 L CNN
+F 1 "Adafruit-MetroMini" H 7378 4405 50  0000 L CNN
+F 2 "" H 6650 4450 50  0001 C CNN
+F 3 "" H 6650 4450 50  0001 C CNN
+	1    6650 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2450 3450 2000 3450
+Wire Wire Line
+	2450 3750 2250 3750
+Wire Wire Line
+	2250 3750 2250 4150
+Wire Wire Line
+	2250 4150 3800 4150
+Wire Wire Line
+	3800 4150 3800 4800
+Wire Wire Line
+	3800 4800 3450 4800
+Wire Wire Line
+	3450 5000 3750 5000
+Wire Wire Line
+	3750 5000 3750 4200
+Wire Wire Line
+	3750 4200 2200 4200
+Wire Wire Line
+	2200 4200 2200 3650
+Wire Wire Line
+	2200 3650 2450 3650
+Wire Wire Line
+	5100 5250 6550 5250
+Wire Wire Line
+	6550 5250 6550 4950
+Wire Wire Line
+	5450 2000 7250 2000
+Wire Wire Line
+	7250 2000 7250 2500
+Wire Wire Line
+	7250 2500 6850 2500
+Wire Wire Line
+	2450 4700 2000 4700
+Wire Wire Line
+	8800 3600 7050 3600
+Wire Wire Line
+	7050 3600 7050 3950
+Wire Wire Line
+	2450 4800 2050 4800
+Wire Wire Line
+	8750 3650 6950 3650
+Wire Wire Line
+	6950 3650 6950 3950
+Wire Wire Line
+	2450 4900 2100 4900
+Wire Wire Line
+	8700 3700 6850 3700
+Wire Wire Line
+	6850 3700 6850 3950
+Wire Wire Line
+	2450 5000 2150 5000
+Wire Wire Line
+	8650 3750 6750 3750
+Wire Wire Line
+	6750 3750 6750 3950
+Wire Wire Line
+	2450 5100 2200 5100
+Wire Wire Line
+	8600 3800 6650 3800
+Wire Wire Line
+	6650 3800 6650 3950
+Wire Wire Line
+	7150 4950 7150 5250
+Wire Wire Line
+	7150 5250 8200 5250
+Wire Wire Line
+	8200 5250 8200 2800
+Wire Wire Line
+	8200 2800 6850 2800
+Wire Wire Line
+	7250 4950 7250 5150
+Wire Wire Line
+	7250 5150 8100 5150
+Wire Wire Line
+	8100 5150 8100 2700
+Wire Wire Line
+	8100 2700 6850 2700
+$Comp
+L Diode:1N914 D?
+U 1 1 5FB44FAD
+P 4250 6000
+F 0 "D?" H 4250 5784 50  0000 C CNN
+F 1 "1N914" H 4250 5875 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4250 5825 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 4250 6000 50  0001 C CNN
+	1    4250 6000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N914 D?
+U 1 1 5FB543D6
+P 4250 6450
+F 0 "D?" H 4250 6234 50  0000 C CNN
+F 1 "1N914" H 4250 6325 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4250 6275 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 4250 6450 50  0001 C CNN
+	1    4250 6450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N914 D?
+U 1 1 5FB54D6F
+P 4250 6800
+F 0 "D?" H 4250 6584 50  0000 C CNN
+F 1 "1N914" H 4250 6675 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4250 6625 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 4250 6800 50  0001 C CNN
+	1    4250 6800
+	-1   0    0    1   
+$EndComp
+$Comp
+L Diode:1N914 D?
+U 1 1 5FB55DEF
+P 4250 7150
+F 0 "D?" H 4250 6934 50  0000 C CNN
+F 1 "1N914" H 4250 7025 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4250 6975 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 4250 7150 50  0001 C CNN
+	1    4250 7150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2200 6000 4100 6000
+Wire Wire Line
+	2200 5100 2200 6000
+Wire Wire Line
+	2150 6450 4100 6450
+Wire Wire Line
+	2150 5000 2150 6450
+Wire Wire Line
+	4100 6800 2100 6800
+Wire Wire Line
+	2100 4900 2100 6800
+$Comp
+L Diode:1N914 D?
+U 1 1 5FB6DC84
+P 4250 7500
+F 0 "D?" H 4250 7284 50  0000 C CNN
+F 1 "1N914" H 4250 7375 50  0000 C CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 4250 7325 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/85622/1n914.pdf" H 4250 7500 50  0001 C CNN
+	1    4250 7500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4100 7150 2050 7150
+Wire Wire Line
+	2050 4800 2050 7150
+Wire Wire Line
+	4100 7500 2000 7500
+Wire Wire Line
+	2000 4700 2000 7500
+Wire Wire Line
+	4400 6000 8600 6000
+Wire Wire Line
+	8600 3800 8600 6000
+Wire Wire Line
+	4400 6450 5000 6450
+Wire Wire Line
+	5000 6450 5000 6050
+Wire Wire Line
+	4400 6800 5100 6800
+Wire Wire Line
+	5100 6800 5100 6100
+Wire Wire Line
+	8650 6050 5000 6050
+Wire Wire Line
+	8650 3750 8650 6050
+Wire Wire Line
+	8700 6100 5100 6100
+Wire Wire Line
+	8700 3700 8700 6100
+Wire Wire Line
+	4400 7150 5200 7150
+Wire Wire Line
+	5200 7150 5200 6150
+Wire Wire Line
+	5200 6150 8750 6150
+Wire Wire Line
+	8750 3650 8750 6150
+Wire Wire Line
+	4400 7500 5300 7500
+Wire Wire Line
+	5300 7500 5300 6200
+Wire Wire Line
+	5300 6200 8800 6200
+Wire Wire Line
+	8800 3600 8800 6200
+Wire Wire Line
+	2000 3450 2000 3150
+Wire Wire Line
+	2000 3150 5100 3150
+Wire Wire Line
+	5100 3150 5100 5250
+Wire Wire Line
+	5450 2000 5450 5150
+Wire Wire Line
+	5450 5150 6250 5150
+Wire Wire Line
+	6250 5150 6250 4950
+Wire Wire Line
+	6350 4950 6350 5200
+Wire Wire Line
+	6350 5200 5400 5200
+Wire Wire Line
+	5400 5200 5400 4900
+Wire Wire Line
+	5400 1950 6600 1950
+Wire Wire Line
+	7300 1950 7300 2600
+Wire Wire Line
+	7300 2600 6850 2600
+Wire Wire Line
+	2450 3550 1950 3550
+Wire Wire Line
+	1950 3550 1950 3100
+Wire Wire Line
+	1950 3100 5400 3100
+Connection ~ 5400 3100
+Wire Wire Line
+	5400 3100 5400 1950
+Wire Wire Line
+	3450 4900 5400 4900
+Connection ~ 5400 4900
+Wire Wire Line
+	5400 4900 5400 3100
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5FB948F9
+P 9300 1300
+F 0 "SW1" H 9300 1585 50  0000 C CNN
+F 1 "SW_Push" H 9300 1494 50  0000 C CNN
+F 2 "" H 9300 1500 50  0001 C CNN
+F 3 "~" H 9300 1500 50  0001 C CNN
+	1    9300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 5FB96770
+P 9300 1750
+F 0 "SW2" H 9300 2035 50  0000 C CNN
+F 1 "SW_Push" H 9300 1944 50  0000 C CNN
+F 2 "" H 9300 1950 50  0001 C CNN
+F 3 "~" H 9300 1950 50  0001 C CNN
+	1    9300 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW3
+U 1 1 5FB96ED8
+P 9300 2200
+F 0 "SW3" H 9300 2485 50  0000 C CNN
+F 1 "SW_Push" H 9300 2394 50  0000 C CNN
+F 2 "" H 9300 2400 50  0001 C CNN
+F 3 "~" H 9300 2400 50  0001 C CNN
+	1    9300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 5FB98060
+P 9300 2650
+F 0 "SW4" H 9300 2935 50  0000 C CNN
+F 1 "SW_Push" H 9300 2844 50  0000 C CNN
+F 2 "" H 9300 2850 50  0001 C CNN
+F 3 "~" H 9300 2850 50  0001 C CNN
+	1    9300 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9500 2650 9700 2650
+Wire Wire Line
+	9700 2650 9700 2200
+Wire Wire Line
+	9700 800  6600 800 
+Wire Wire Line
+	6600 800  6600 1950
+Connection ~ 6600 1950
+Wire Wire Line
+	6600 1950 7300 1950
+Wire Wire Line
+	9500 1300 9700 1300
+Connection ~ 9700 1300
+Wire Wire Line
+	9700 1300 9700 800 
+Wire Wire Line
+	9500 1750 9700 1750
+Connection ~ 9700 1750
+Wire Wire Line
+	9700 1750 9700 1300
+Wire Wire Line
+	9500 2200 9700 2200
+Connection ~ 9700 2200
+Wire Wire Line
+	9700 2200 9700 1750
+Wire Wire Line
+	9100 1300 8550 1300
+Wire Wire Line
+	8550 1300 8550 3200
+Wire Wire Line
+	6350 3200 6350 3950
+Wire Wire Line
+	6350 3200 8550 3200
+Wire Wire Line
+	9100 1750 8600 1750
+Wire Wire Line
+	8600 1750 8600 3250
+Wire Wire Line
+	8600 3250 6250 3250
+Wire Wire Line
+	6250 3250 6250 3950
+Wire Wire Line
+	9100 2200 8650 2200
+Wire Wire Line
+	8650 2200 8650 3300
+Wire Wire Line
+	8650 3300 6150 3300
+Wire Wire Line
+	6150 3300 6150 3950
+Wire Wire Line
+	9100 2650 8700 2650
+Wire Wire Line
+	8700 2650 8700 3350
+Wire Wire Line
+	8700 3350 6050 3350
+Wire Wire Line
+	6050 3350 6050 3950
+$EndSCHEMATC

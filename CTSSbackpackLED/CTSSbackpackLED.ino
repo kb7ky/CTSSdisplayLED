@@ -121,6 +121,15 @@ int buttonPins[] = {
 };
 int buttonState[4];
 
+// LED stuff
+// only keep display on for LED_SHOW_TIME
+const long PACK_LED_SHOW_TIME = 5 * 1000;  // milli
+unsigned long startLEDshow = 0;
+
+const int PACK_LED_ON = 1;
+const int PACK_LED_OFF = 0;
+int currentLEDstate = PACK_LED_OFF;
+
 int currentLEDval = 0;
 
 void setDisplay(int val) {
@@ -130,6 +139,19 @@ void setDisplay(int val) {
     currentLEDval = val;
     DEBUG(4,"setDisplay ");
     DEBUG(4, val);
+    currentLEDstate = PACK_LED_ON;
+    startLEDshow = millis();
+  }
+
+  if(currentLEDstate == PACK_LED_ON) {
+    unsigned long nowMilli = millis();
+    if(nowMilli - startLEDshow > PACK_LED_SHOW_TIME) {
+      // turn off display
+      DEBUG(4, "clrDisplay");
+      matrix.clear();
+      matrix.writeDisplay();
+      currentLEDstate = PACK_LED_OFF;
+    }
   }
 }
 
@@ -216,26 +238,32 @@ void processButtons() {
   for(int i = 0; i < NUMBUTTON; i++) {
     if(buttonState[i] == BUTTON_PROCESS) {
       buttonState[i] = BUTTON_READY;
-      switch(i) {
-        case 0:
-          // process Button1
-          nextCTSS();
-          break;
-        case 1:
-          // process Button2
-          prevCTSS();
-          break;
-        case 2:
-          // process Button3
-          memCTSS1();
-          break;
-        case 3:
-          // process Button 4
-          memCTSS2();
-          break;
-        default:
-          DEBUG(1,"Error in processButtons case");
-          break;  
+
+      // if LED off, then turn on
+      if(currentLEDstate == PACK_LED_OFF) {
+          currentLEDval = -1;
+      } else {
+        switch(i) {
+          case 0:
+            // process Button1
+            nextCTSS();
+            break;
+          case 1:
+            // process Button2
+            prevCTSS();
+            break;
+          case 2:
+            // process Button3
+            memCTSS1();
+            break;
+          case 3:
+            // process Button 4
+            memCTSS2();
+            break;
+          default:
+            DEBUG(1,"Error in processButtons case");
+            break;
+        }  
       }
     }
   }
@@ -250,7 +278,8 @@ void setup() {
 
   // setup LED backpack
   matrix.begin(0x70);
-  
+  matrix.setBrightness(0);
+    
   if(ctssMode == CTSS_MONITOR) {
     for(int i = 0; i < NUMCTSSPIN; i++) {
         pinMode(ctssPins[i], CTSSPINMODE);
